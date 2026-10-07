@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Media</title>
+</head>
+<body>
+
+    <h1>Delete Media</h1>
+
+    <p>Are you sure you want to delete:</p>
+
+    <h3>{{ media.title }}</h3>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <button type="submit">Yes, Delete</button>
+
+        <a href="/gallery/">Cancel</a>
+    </form>
+
+</body>
+</html>
